@@ -20,7 +20,7 @@ RSpec.describe "fizzbuzz" do
   end
   context "when number is divisible by both" do
     let(:num) { rand(1000) * 15 }
-    
+
     it "should return 'fizzbuzz'" do
       expect(fizzbuzz(15)).to eq("fizzbuzz")
       expect(fizzbuzz(45)).to eq("fizzbuzz")
