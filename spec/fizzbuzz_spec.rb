@@ -16,4 +16,12 @@ RSpec.describe "fizzbuzz" do
       expect(fizzbuzz(92)).not_to eq("buzz")
     end
   end
+  context "when number is divisible by both" do
+    it "should return 'fizzbuzz'" do
+      expect(fizzbuzz(15)).to eq("fizzbuzz")
+      expect(fizzbuzz(45)).to eq("fizzbuzz")
+      expect(fizzbuzz(80)).not_to eq("fizzbuzz")
+      expect(fizzbuzz(27)).not_to eq("fizzbuzz")
+    end
+  end
 end
